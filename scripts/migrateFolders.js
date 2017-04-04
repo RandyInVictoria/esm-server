@@ -7,6 +7,7 @@ var defaultConnectionString = "mongodb://localhost:27017/esm-master";
 var username                = "";
 var password                = "";
 var host                    = "";
+var db                      = "";
 
 var defaultPerms = {
     unPublish : [
@@ -37,8 +38,7 @@ var defaultPerms = {
         "assessment-lead",
         "assessment-team",
         "project-epd",
-        "project-system-admin",
-        "public"
+        "project-system-admin"
     ],
     read : [
         "assessment-admin",
