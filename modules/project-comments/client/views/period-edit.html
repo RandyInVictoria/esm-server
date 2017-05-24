@@ -15,26 +15,26 @@
     <div ng-show="hasErrors" class="alert alert-danger flex-row">
 		<div class="alert-icon"><span class="glyphicon glyphicon-exclamation-sign"></span></div>
 		<div class="alert-msg">
-			<span class="alert-msg-title">Roles & Permissions are not complete.</span>
+			<span class="alert-msg-title">Roles &amp; Permissions are not complete.</span>
 			<span class="alert-msg-details">There must be at least one (1) role assigned to each permission.</span>
 		</div>
 	</div>
 
-		<!-- TABS -->
-		<ul class="nav nav-tabs" ng-init="form.curTab = 'pcpDetails'">
-			<li role="presentation" ng-class="{'active':form.curTab === 'pcpDetails'}">
-				<a href ng-click="form.curTab = 'pcpDetails'">Details</a>
-			</li>
-			<li role="presentation" ng-class="{'active':form.curTab === 'pcpRelatedDocs'}">
-				<a href ng-click="form.curTab = 'pcpRelatedDocs'">Related Documents</a>
-			</li>
-			<li role="presentation" ng-class="{'active':form.curTab === 'pcpOpenHouses'}">
-				<a href ng-click="form.curTab = 'pcpOpenHouses'">Open Houses</a>
-			</li>
-			<li role="presentation" ng-class="{'active':form.curTab === 'pcpRoles'}">
-				<a href ng-click="form.curTab = 'pcpRoles'">Roles & Permissions</a>
-			</li>
-		</ul><!-- / TABS -->
+	<!-- TABS -->
+	<ul class="nav nav-tabs" ng-init="form.curTab = 'pcpDetails'">
+		<li role="presentation" ng-class="{'active':form.curTab === 'pcpDetails'}">
+			<a href ng-click="form.curTab = 'pcpDetails'">Details</a>
+		</li>
+		<li role="presentation" ng-class="{'active':form.curTab === 'pcpRelatedDocs'}">
+			<a href ng-click="form.curTab = 'pcpRelatedDocs'">Related Documents</a>
+		</li>
+		<li role="presentation" ng-class="{'active':form.curTab === 'pcpOpenHouses'}">
+			<a href ng-click="form.curTab = 'pcpOpenHouses'">Open Houses</a>
+		</li>
+		<li role="presentation" ng-class="{'active':form.curTab === 'pcpRoles'}">
+			<a href ng-click="form.curTab = 'pcpRoles'">Roles &amp; Permissions</a>
+		</li>
+	</ul><!-- / TABS -->
 
 		<!-- DETAILS TAB CONTENT -->
 		<div class="tab-pane" ng-show="form.curTab === 'pcpDetails'">
